@@ -1,0 +1,18 @@
+<div class="main-content-box">
+  <a href="../action/load.php?file_name=$file_name" target="_blank">
+    <img class="preview-img" src="../assets/icons/preview.jpg"/>
+    <img class="type-icon" src="$file_icon"/>
+  </a>
+  <b>$file_name</b><br>
+  <i>$file_size</i><br>
+  <a href="$server_self?$filterdownload=$file_name">
+    <img class="download-icon" src="../assets/icons/download.png">
+  </a>
+  <a class="share-url" href="$server_self?$filtershare=$file_name">
+    <img class="share-icon" src="../assets/icons/share$share_status.png">
+  </a>
+  $share_link
+  <a href="$server_self?$filterdelete=$file_name">
+    <img class="delete-icon" src="../assets/icons/delete.png">
+  </a>
+</div>

@@ -1,0 +1,30 @@
+.download-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 15px;
+  background-color: rgb(80,111,135);
+  box-shadow: 0px 0px 50px rgb(66, 81, 105);
+  border-radius: 5px;
+}
+
+.download-link {
+  position: relative;
+  z-index: 2;
+  background-color: inherit;
+}
+
+.message-box a {
+  font-style: none;
+  color: rgb(255, 255, 250);
+}
+
+.complete-box {
+  position: absolute;
+  margin: -46px 15px;
+  line-break: normal;
+  z-index: 1;
+  width: 200px;
+  color: rgb(255, 255, 250);
+}

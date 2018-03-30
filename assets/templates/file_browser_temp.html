@@ -1,0 +1,13 @@
+<div class="main-wrapper">
+          <form class="main-menu-wrapper" action="$server_self" method="get">
+            $file_browser_menu
+          </form>
+          $message_box
+          <form class="upload-file-wrapper" action="$server_self" method="post" enctype="multipart/form-data">
+            <input type="file" name="file_upload" accept="audio/*|video/*|image/*|application/pdf">
+            <input type="submit" name="upload_file" value="Upload file">
+          </form>
+        <div class="main-content-wrapper">
+          $main_content
+        </div>
+</div>

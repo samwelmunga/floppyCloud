@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/LatoLatin-Regular.ttf);
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url(../fonts/LatoLatin-Bold.ttf);
+}
+
+* {
+  font-family: 'Lato';
+}
+
+.main-page-title {
+  text-align: center;
+  margin-bottom: -20px;
+  font-size: 40pt;
+  color: rgb(255, 255, 250);
+}
+
+.cover {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background-color: rgb(126,145,162);
+}
+
+footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0px;
+  left: 0;
+  z-index: 10;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(255, 255, 250);
+}

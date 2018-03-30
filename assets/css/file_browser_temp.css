@@ -1,0 +1,203 @@
+@keyframes blink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.main-wrapper {
+  width: 80vw;
+  height: fit-content;
+  min-height: 250px;
+  position: absolute;
+  margin: 100px 8.5%;
+  background-color: rgb(245,255,255);
+  box-shadow: 0px 0px 50px rgb(66, 81, 105);
+  padding-bottom: 30px;
+}
+
+.main-content-wrapper {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.main-wrapper h2 {
+  position: absolute;
+  left: 30px;
+  color: rgb(31, 58, 82);
+}
+
+.upload-file-wrapper {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  color: rgb(12, 56, 96);
+  width: 100px;
+}
+
+.main-menu-wrapper {
+  position: relative;
+  left: 2.5%;
+  top: 125px;
+  width: 95%;
+  height: 50px;
+  display: inline-flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(12, 56, 96);
+}
+
+input {
+    cursor: pointer;
+}
+
+.main-menu-wrapper input {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(100,131,155);
+  box-shadow: 0 1px 4px rgb(125, 125, 120);
+  border: none;
+  font-weight: 600;
+  font-size: 11pt;
+}
+
+.upload-file-wrapper input[type="submit"] {
+  background-color: rgb(100,131,155);
+  box-shadow: 0 1px 4px rgb(125, 125, 120);
+  border: none;
+  margin-top: 10px;
+  font-size: 11pt;
+  color: rgb(245,255,255);
+}
+
+input[disabled] {
+  cursor: default;
+  background-color: rgb(80,111,135);
+  color: rgb(255, 255, 250);
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+input[value="logout"] {
+  background-color: rgb(31, 58, 82);
+  color: rgb(255, 255, 250);
+  margin-top: -80px;
+}
+
+.action_URL {
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  z-index: 10;
+  cursor: pointer;
+  background-color: rgb(12, 56, 96);
+  border: 1px solid rgb(12, 56, 96);
+  box-shadow: 0 0 15px rgb(12, 56, 96);
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  animation: blink 4s ease-out 0s infinite;
+}
+
+.cancel_action {
+  position: fixed;
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: inherit;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.main-content-box {
+  width: 10.5%;
+  height: fit-content;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+  box-shadow: 0px 1px 2px black;
+  overflow-wrap: break-word;
+  background: rgb(126,145,162);
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.main-content-box b {
+  font-family: 'Lato-Bold';
+}
+
+.main-content-box i {
+  color: rgb(230,250,250);
+  font-size: 10pt;
+  float: right;
+  margin-right: 6px;
+}
+
+.main-content-box .type-icon {
+  position: relative;
+  width: calc(100% - 9px);
+  box-shadow: 0 0 0 4px rgb(126,145,162);
+  border: 1px solid rgb(245,255,255);
+}
+
+.main-content-box .preview-img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  margin-top: -100%;
+  margin-bottom: -100%;
+  z-index: 3;
+  transition: 0.5s;
+}
+
+.main-content-box:hover .preview-img {
+  opacity: 0.9;
+}
+
+.main-content-box .download-icon {
+  width: 20px;
+  position: absolute;
+  margin: 10px -35px;
+}
+
+.main-content-box .share-icon {
+  width: 18px;
+  position: absolute;
+  margin: 11px -7px;
+}
+
+.share-link {
+  display: none;
+  position: absolute;
+  margin: 30px;
+  padding: 2px;
+  background-color: rgb(126,145,162);
+  box-shadow: 0px 1px 2px black;
+  z-index: 3;
+}
+
+.share-url:hover + .share-link {
+  display: block;
+}
+
+.share-link:hover {
+  display: block;
+}
+
+.main-content-box .delete-icon {
+  width: 25px;
+  position: absolute;
+  margin: 7px 15px;
+}

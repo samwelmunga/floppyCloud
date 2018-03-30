@@ -1,0 +1,28 @@
+.login-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 15px;
+  background-color: rgb(80,111,135);
+  box-shadow: 0px 0px 50px rgb(66, 81, 105);
+  border-radius: 5px;
+}
+
+.message-box {
+  color: rgb(255, 255, 250);
+}
+
+input[type="submit"] {
+  background-color: rgb(126,164,162);
+  border: none;
+  margin-left: 15px;
+  box-shadow: 0 1px 4px rgb(56, 71, 95);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(136,174,172);
+  box-shadow: 0 1px 1px rgb(51, 66, 90);
+}
